@@ -47,6 +47,3 @@ Adjust the parameters in `config/config.yaml` to customize:
 - Number of frames for drowsiness detection
 - Camera settings
 
-## License
-
-MIT License
