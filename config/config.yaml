@@ -1,0 +1,22 @@
+# Drowsiness Detection System Configuration
+
+# Drowsiness detection parameters
+ear_threshold: 0.25    # Eye Aspect Ratio threshold for drowsiness detection
+ear_frames: 20         # Number of consecutive frames with EAR below threshold to trigger alert
+
+# Camera settings
+camera_index: 0        # ID of the camera to use (0 for default camera)
+frame_width: 640       # Camera capture width
+frame_height: 480      # Camera capture height
+
+# File paths
+landmark_path: "models/shape_predictor_68_face_landmarks.dat"  # Path to facial landmark predictor
+
+# Display options
+show_fps: true         # Whether to display FPS counter
+show_landmarks: true   # Whether to display facial landmarks
+show_ear: true         # Whether to display EAR value
+
+# Alert options
+use_sound_alert: false # Whether to play sound when drowsiness detected
+sound_file: "assets/alarm.wav"  # Path to sound file (if use_sound_alert is true)
